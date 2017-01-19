@@ -4,7 +4,7 @@
 
 
 RSpec.feature 'Reduce HP' do #like 'describe'
-  scenario "6. Reduce Player 2 HP by 10" do #like 'it'
+  scenario "5. Reduce Player 2 HP by 10" do #like 'it'
     sign_in_and_play #see features/web_helpers.rb
     click_button('Attack!')
     click_button('Back!')
