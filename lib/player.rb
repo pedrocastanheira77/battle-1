@@ -7,10 +7,15 @@ class Player
     @name = name
     @health = 100
   end
+#new
+  def attack(opponent)
+    opponent.receive_attack
+  end
 
   def receive_attack
     @health -= 10
   end
+
 
 
 

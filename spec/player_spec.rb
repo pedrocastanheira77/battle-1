@@ -11,6 +11,13 @@ describe Player do
       player2 = Player.new("Ernie")
       expect{ player2.receive_attack }.to change {player2.health}.by -10
     end
+
+#newß
+    it "6. Attacks" do
+      player1 = Player.new("Bert")
+      player2 = Player.new("Ernie")
+      expect{ player1.attack(player2) }.to change {player2.health}.by -10
+    end
 end
 
 

@@ -33,7 +33,8 @@ class Battle < Sinatra::Base
   @player_1_name = $player_1_name.name
   @player_2_name = $player_2_name.name
 
-  @player_2_health = $player_2_name.receive_attack
+  # @player_2_health = $player_2_name.receive_attack
+  $player_1_name.attack($player_2_name)
 
 
   # @player_1_health
