@@ -1,5 +1,6 @@
-<%=@player_1_name%> VS <%= @player_2_name %> <br />
-<%=@player_2_name%> HP = <%=@player_2_health%>/100
+<%=@attacker_name%> VS <%= @attacked_name %> <br />
+<%=@attacker_name%> HP = <%=@attacker_health%>/100
+<%=@attacked_name%> HP = <%=@attacked_health%>/100
 
 <form action="/attack_msg">
   <input type="submit" value="Attack!" />

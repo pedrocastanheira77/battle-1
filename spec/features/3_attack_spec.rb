@@ -15,6 +15,6 @@ RSpec.feature 'Attack' do
     sign_in_and_play
     click_button('Attack!')
     click_button('Back!')
-    expect(page).to have_content 'Predator VS The Terminator'
-  end 
+    expect(page).to have_content 'The Terminator VS Predator'
+  end
 end
