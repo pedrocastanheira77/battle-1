@@ -1,4 +1,4 @@
-require "player.rb"
+require "player"
 
 
 describe Player do
@@ -19,6 +19,4 @@ describe Player do
       player2 = Player.new("Ernie")
       expect{ player2.receive_attack }.to change {player2.health}.by -10
     end
-
-
 end

@@ -2,23 +2,17 @@ require_relative "game"
 
 class Player
 
-  attr_reader :name, :health, :game
-  # x = Player.new("Bert")
-  #  => #<Player:0x007f96eb15d4f0 @name="Bert">
-  def initialize(name)
+  attr_reader :name, :health
+  DEFAULT_HP = 100
+  DAMAGE_VALUE = 10  
+
+  def initialize(name, health = DEFAULT_HP)
     @name = name
-    @health = 100
+    @health = health
   end
-  #new
-    # def attack(opponent)
-    #   opponent.receive_attack
-    # end
-    #
-    def receive_attack
-      @health -= 10
-    end
 
-
-
+  def receive_attack
+    @health -= DAMAGE_VALUE
+  end
 
 end
