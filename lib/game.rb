@@ -22,6 +22,8 @@ class Game
     switch_turns
   end
 
+  private
+
   def switch_turns
     if @switcher == 0
       @switcher = 1
