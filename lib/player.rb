@@ -4,7 +4,7 @@ class Player
 
   attr_reader :name, :health
   DEFAULT_HP = 100
-  DAMAGE_VALUE = 10  
+  DAMAGE_VALUE = 10
 
   def initialize(name, health = DEFAULT_HP)
     @name = name

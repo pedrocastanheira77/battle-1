@@ -1,5 +1,9 @@
 You have attacked <%=@attacked_name%>
 
-<form action="/play">
-  <input type="submit" value="Back!" />
-</form>
+<% if @attacked_health == 0 %>
+  <form action="/lose">
+<% else %>
+  <form action="/play">
+<% end %>
+    <input type="submit" value="Back!" />
+  </form>

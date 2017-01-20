@@ -13,11 +13,11 @@ describe Game do
       expect(game).to respond_to(:player2)
     end
   end
+
   describe '#attack' do
     it 'damages the player' do
       expect(player_2).to receive(:receive_attack)
       game.attack
     end
   end
-
 end

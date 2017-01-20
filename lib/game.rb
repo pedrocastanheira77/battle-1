@@ -1,6 +1,6 @@
 
 class Game
-  attr_reader :player1, :player2
+  attr_reader :player1, :player2, :status
 
   def initialize(player1 = Player.new(name), player2 = Player.new(name))
     @player1 = player1
